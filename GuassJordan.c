@@ -6,7 +6,7 @@
 #include<stdio.h>
 
 int main(){
-    freopen("in.txt", "r", stdin);
+//     freopen("in.txt", "r", stdin);
     int n,i,j,k;
     printf("Enter n: ");
     scanf("%d", &n);
