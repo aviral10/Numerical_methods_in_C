@@ -4,9 +4,9 @@
 */
 
 #include<stdio.h>
-
+#include<math.h>
 int main(){
-//     freopen("in.txt", "r", stdin);
+    // freopen("in.txt", "r", stdin);
     int n,i,j,k;
     printf("Enter n: ");
     scanf("%d", &n);
@@ -45,7 +45,7 @@ int main(){
     //Upper Triangular
     for(i=0;i<n;i++){
         for(j=i+1;j<n;j++){
-            if(arr[i][i] <= 0.000001 && arr[i][i] >= -0.000001){
+            if(fabs(arr[i][i]) < 0.000001){
                 printf("Cannot Solve since a diagonal entry becomes 0\n");
                 return 0;
             }
@@ -63,6 +63,7 @@ int main(){
         printf("\n");
     }
 
+    //Back Substitution
     double ans[n];
     for(i=n-1;i>=0;i--){
         double fin = arr[i][n];
