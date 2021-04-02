@@ -163,7 +163,7 @@ void multiplexed_Method(float *map[], int mpi, int swi){
 }
 void clear_map(){
     int map[2], j;
-    for(int i=0;i<pow(10, 8);i++){
+    for(int i=0;i<2*pow(10, 8);i++){
         map[0] = 0;j++;
     }
 }
@@ -207,7 +207,7 @@ void newtonRhap(float *map[], int mpi){
 int main()
 {
     printf("Enter the polynomial equation: \n");
-    printf("Example: 2a-3b+99d-0.8c=0\n[No spaces are expected in between]\n:: ");
+    printf("Example: x^2+3x+1=0\n[No spaces are expected in between]\n:: ");
     
     char eq[100] = "10x^3-22x^10-99999=-100";
     fgets(eq, 100, stdin);
