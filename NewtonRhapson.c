@@ -20,7 +20,7 @@ int main(){
     // freopen("in.txt", "r", stdin);
     // freopen("out.txt", "w", stdout);
     float xp;
-    int n, places, count;
+    int n, places, count=0;
     //Input
     printf("Enter initial approximation: ");
     scanf("%f", &xp);

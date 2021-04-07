@@ -17,7 +17,7 @@ int main(){
     // freopen("in.txt", "r", stdin);
     // freopen("out.txt", "w", stdout);
     float a,b;
-    int n, places, count;
+    int n, places, count=0;
     //Input
     printf("Enter the interval a,b: ");
     scanf("%f%f", &a, &b);
